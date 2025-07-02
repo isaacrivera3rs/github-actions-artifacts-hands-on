@@ -26,6 +26,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: create download dir
+        run: mkdir artifacts  
       - name: download text file
         uses: actions/download-artifact@v4
         with:
